@@ -1,7 +1,6 @@
-setwd("/Users/bryan/Documents/Graduate/5240 Visualization/mid term/data")
-
-employment_raw <- read.csv("industry_employment.csv", stringsAsFactors = FALSE)
-ai_raw <- read.csv("ai_business_use.csv", stringsAsFactors = FALSE)
+# Run this script from the repository root
+employment_raw <- read.csv("data/industry_employment.csv", stringsAsFactors = FALSE)
+ai_raw <- read.csv("data/ai_business_use.csv", stringsAsFactors = FALSE)
 
 employment <- employment_raw[employment_raw$REF_AREA == "DNK",
                              c("ACTIVITY", "TIME_PERIOD", "OBS_VALUE")]
